@@ -1,0 +1,75 @@
+body {
+    
+    margin:0;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: PT Sans Narrow, sans-serif;
+    
+}
+
+/* Tab-Banner */
+
+.nav {
+
+    background: rgba(255, 195, 84, 0.75);
+    color: black;
+    list-style: none;
+    margin: 0px;
+    padding: 20px 0 20px 0;
+    vertical-align: top;
+    position:relative;
+    height:100%;
+
+}
+.nav > li {
+
+    width 100%;
+    display: inline-block;
+    padding-right: 50px;
+    z-index: 3;
+    margin-left: 20px;
+    float: left;
+    font-family: PT Sans Narrow,sans-serif;
+
+}
+.nav > li > a {
+
+    width 100%;
+    text-decoration: none;
+    color: white;
+    font-family: PT Sans Narrow, sans-Serif;
+    font-size: 20px;
+
+}
+.nav > li > a:hover{
+
+    color:#ff913d;
+
+}
+
+.tabs{
+
+    animation: fadein 0.4s;
+    display:block;
+    width: 100%;
+    height:6vh;
+    overflow-y: hidden;
+    box-shadow: 0 0 5px 0 rgba ( 0, 0 ,0, 6);
+    position: fixed;
+    z-index: 9;
+    
+}
+.tabs.fixed{
+
+    position:fixed;
+    top: 0;
+    z-index: 2;
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Scoll Bar */
+
