@@ -85,6 +85,28 @@ body {
 .titleImage {
     
     background-image: url(../_images/code.png);
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    background-size: cover;
+    /*temp*/
+    position: relative;
+    display: flex;    
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.topOverlap {
+    
+    background-image: url(../_images/name.svg);
     width: 100vw;
     height: 100vh;
     right: 0;
