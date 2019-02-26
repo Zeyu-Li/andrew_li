@@ -7,6 +7,8 @@
     <title>Andrew Li's Digital Services | HOME</title>
     <script src="_js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="_css/index.css" type="text/css">
+    <link rel="stylesheet" href="_css/slick-theme.css">
+    <link rel="stylesheet" href="_css/slick.css">
     
 </head>
     
@@ -42,22 +44,22 @@
 
                 <h1>Welcome to Andrew's Digital Services</h1>
                 <p>From building an online presence to creating media and 3D objects, I would love to aid you and your company into a successful presence in the digital landscape. To view examples of my works, the following slideshow has been created. If you want to go more indepth about each item and the pricing, click the open on new windows (grey) button. </p>
-                <div class="slideshowContainer">
-                    <a target="_blank" class="newWindow"><img src="_images/new%20window.svg" style="width: 175px;" id="window"></a>
-                    <img alt="artworks" src="_images/artwork1.png" style="display: none;" class="slideshow">
-                    
-                    <div class="buttonDiv">
-                        <a title="Vector Planets"><span class="wButton" onclick="currentpic(1)"></span></a>
-                        <a title="3D Wrieframe"><span class="wButton" onclick="currentpic(2)"></span></a>
-                        <a title="3D Taris Render"><span class="wButton" onclick="currentpic(3)"></span></a>
-                        <a title="Website Building"><span class="wButton" onclick="currentpic(4)"></span></a>
-                        
-                    </div>
+                <!-- window                   <a target="_blank" class="newWindow"><img src="_images/new%20window.svg" style="width: 175px;" id="window"></a>-->
+                <div class="slideshowContainer" id="wrapper">
+
+                    <div style="text-align: center;"><img alt="artworks" src="_images/artwork1.png" class="slideshow"></div>
+                    <div style="text-align: center;"><img alt="artworks" src="_images/artwork2.png" class="slideshow"></div>
+                    <div style="text-align: center;"><img alt="artworks" src="_images/artwork3.png" class="slideshow"></div>
+                    <div style="text-align: center;"><img alt="artworks" src="_images/artwork4.png" class="slideshow"></div>
+                  
                 </div>
+                
+                <script src="_js/slick.min.js"></script>
+                <script src="_js/slideshow.js"></script>
             </div>
 
         </div>
-        <script src="_js/slideshow.js"></script>
+        
     </section>
     
     <!-- footer -->
