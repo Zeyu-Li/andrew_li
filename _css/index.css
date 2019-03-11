@@ -85,6 +85,15 @@ p {
 	-o-transition: 0.2s;
 
 }
+/*TODO: bars*/
+
+.nav > li > img {
+
+    display: none;
+    width: 50px;
+    height: 50px;
+
+}
 
 .tabs {
 
@@ -96,6 +105,10 @@ p {
     box-shadow: 0 0 6px 0 rgba(0, 0 ,0, 1);
     position: fixed;
     z-index: 9;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     
 }
 
@@ -112,7 +125,6 @@ p {
     to   { opacity: 1; }
 }
 
-/*TODO: options bar*/
 @media (max-width: 1080px) {
     
     .nav > li > a {
@@ -121,6 +133,59 @@ p {
         line-height: 1.3em;
 
 }
+    
+}
+
+@media (max-width: 580px) {
+    .nav > li > a  {
+
+        line-height: 1em;
+        display: none;
+
+}
+    .nav > li > img  {
+
+        line-height: 10em;
+        display:block;
+        float: right;
+        text-align: right;
+
+}
+    .tabs {
+        
+        height: 6vh;
+        opacity: .7;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        text-align: right;
+/*        TODO*/
+        
+    }
+    .tabs:hover {
+        
+        opacity: .95;
+        
+    }
+    .nav > li > img:hover {
+        
+        filter: brightness(60%);
+        
+    }
+    .nav > li {
+        
+        padding: 0em 0 0px 0;
+        text-align: right;
+        
+    }
+    .nav {
+        
+        padding: .3em;
+        text-align: right;
+        
+    }
+    
     
 }
 
