@@ -19,51 +19,43 @@
 .slick-prev,
 .slick-next
 {
-    font-size: 10;
+    font-size: 0;
     line-height: 0;
+
     position: absolute;
     top: 50%;
 
     display: block;
 
-    width: 30px;
-    height: 220px;
-    padding: 5px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 
     cursor: pointer;
-    z-index: 50;
 
     color: transparent;
     border: none;
     outline: none;
-    background: rgb(237, 237, 237);
-    border-radius: 25px
-    
+    background: transparent;
 }
-
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    opacity: .30;
+    color: transparent;
     outline: none;
-    transition: 0.2s;
-	-moz-transition: 0.2s;
-	-webkit-transition: 0.2s;
-	-o-transition: 0.2s;
+    background: transparent;
 }
-
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before
 {
     opacity: 1;
-    
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -97,34 +89,28 @@
 .slick-prev:before
 {
     content: '←';
-    color: black;
 }
 [dir='rtl'] .slick-prev:before
 {
     content: '→';
-    color: black;
 }
 
 .slick-next
 {
     right: -25px;
-    
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
     left: -25px;
-    
 }
 .slick-next:before
 {
     content: '→';
-    color: black;
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-    color: black;
 }
 
 /* Dots */
@@ -154,8 +140,8 @@
 
     display: inline-block;
 
-    width: 1.3em;
-    height: 1.5em;
+    width: 20px;
+    height: 20px;
     margin: 0 5px;
     padding: 0;
 
@@ -175,9 +161,9 @@
     cursor: pointer;
 
     color: transparent;
-    border: 0px;
+    border: 0;
     outline: none;
-    background: none;
+    background: transparent;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -188,17 +174,12 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
-    transition: 0.4s;
-	-moz-transition: 0.4s;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-    
 }
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 64px;
-    line-height: 22px;
+    font-size: 6px;
+    line-height: 20px;
 
     position: absolute;
     top: 0;

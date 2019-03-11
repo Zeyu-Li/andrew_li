@@ -112,7 +112,6 @@ p {
     to   { opacity: 1; }
 }
 
-/*TODO: options bar*/
 @media (max-width: 1080px) {
     
     .nav > li > a {
@@ -121,6 +120,17 @@ p {
         line-height: 1.3em;
 
 }
+    
+}
+
+@media (max-width: 524px) {
+    
+    .tabs {
+        
+        height: 10vh;
+        line-height: 1.4em;
+        
+    }
     
 }
 
