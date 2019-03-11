@@ -6,7 +6,7 @@ $(document).ready(function() {
             dots: true,
             arrows: true,
             autoplay:true,
-            autoplaySpeed: 2700
+            autoplaySpeed: 2700,
             
         })
                   
