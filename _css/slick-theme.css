@@ -43,6 +43,16 @@
     border-radius: 25px
     
 }
+@media (max-width: 1080px) {
+    
+    .slick-prev,
+    .slick-next {
+        
+        display: none;
+        
+    }
+    
+}
 
 .slick-prev:hover,
 .slick-prev:focus,

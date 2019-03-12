@@ -1,3 +1,8 @@
+html {
+    
+    scroll-behavior: smooth;
+    
+}
 body {
     
     margin:0;
@@ -44,7 +49,7 @@ p {
 
 /* Tab-Banner */
 
-.nav {
+.nav{
 
     background: rgba(255, 189, 84, 0.70);
     color: black;
@@ -67,7 +72,7 @@ p {
     font-family: PT Sans Narrow,sans-serif;
 
 }
-.nav > li > a {
+.nav > li > a , .barActiveTabs > li >a {
 
     width 100%;
     text-decoration: none;
@@ -76,7 +81,7 @@ p {
     font-size: 24px;
 
 }
-.nav > li > a:hover{
+.nav > li > a:hover, .barActiveTabs > li >a:hover {
 
     color: rgba(255, 127, 41, .85);
 	transition: 0.2s;
@@ -85,9 +90,50 @@ p {
 	-o-transition: 0.2s;
 
 }
-/*TODO: bars*/
 
-.nav > li > img {
+/* side bars */
+.barActive {
+    
+    display: block;
+    opacity: .90;
+    z-index: 10;
+    top: 0;
+    position: fixed;
+    animation: fadein 0.4s;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    background-color: rgb(99, 99, 99);
+    border-bottom: 20px solid rgb(58, 58, 58);
+    border-top: 20px solid rgb(58, 58, 58);
+    display: none;
+    
+    
+    
+}
+
+.barActiveTabs {
+    
+    
+    margin: 0px;
+    vertical-align: top;
+    position:relative;
+    width: 100vw;
+    height: 20vh;
+    list-style: none;
+    line-height: 1.8em;
+    
+	transition: 0.2s;
+	-moz-transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+    
+}
+
+/* tab bars */
+
+.nav > li > div > a > img {
 
     display: none;
     width: 50px;
@@ -98,7 +144,7 @@ p {
 .tabs {
 
     animation: fadein 0.4s;
-    display:block;
+    display: block;
     width: 100%;
     height:7.5vh;
     overflow-y: hidden;
@@ -125,7 +171,7 @@ p {
     to   { opacity: 1; }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1090px) {
     
     .nav > li > a {
 
@@ -143,24 +189,24 @@ p {
         display: none;
 
 }
-    .nav > li > img  {
+    .nav > li > div > a > img  {
 
         line-height: 10em;
         display:block;
         float: right;
         text-align: right;
+        
 
 }
     .tabs {
         
         height: 6vh;
-        opacity: .7;
+        opacity: .5;
         transition: 0.2s;
         -moz-transition: 0.2s;
         -webkit-transition: 0.2s;
         -o-transition: 0.2s;
         text-align: right;
-/*        TODO*/
         
     }
     .tabs:hover {
@@ -168,9 +214,18 @@ p {
         opacity: .95;
         
     }
-    .nav > li > img:hover {
+    .nav > li > div > a > img:hover + .barActive {
+        
+        display: block;
+        
+    } 
+    .nav > li > div > a > img:hover {
         
         filter: brightness(60%);
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
         
     }
     .nav > li {
@@ -235,6 +290,27 @@ p {
         background-image: url(../_images/nameSmall.svg);
         
     }
+    
+}
+
+.scollDown {
+    
+    background: url(../_images/arrow.svg);
+    background-size: contain;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    left: 45%;
+    margin-left: -15px;
+    width: 18vw;
+    z-index: 10;
+    height: 18vw;
+    padding: 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    max-width: 150px;
+    max-height: 150px;
     
 }
 
