@@ -265,7 +265,7 @@ p {
 
 .titleImage {
     
-    background-image: url(../_images/code.png);
+    background-image: url(../images/code.jpg);
     z-index: 1;
     right: 0;
     bottom: 0;
@@ -287,7 +287,7 @@ p {
 
 .topOverlap {
     
-    background-image: url(../_images/name.svg);
+    background-image: url(../images/name.svg);
     width: 100vw;
     height: 100vh;
     right: 0;
@@ -304,7 +304,7 @@ p {
     
     .topOverlap {
         
-        background-image: url(../_images/nameSmall.svg);
+        background-image: url(../images/nameSmall.svg);
         
     }
     
@@ -312,7 +312,7 @@ p {
 
 .scollDown {
     
-    background: url(../_images/arrow.svg);
+    background: url(../images/arrow.svg);
     background-size: contain;
     display: block;
     cursor: pointer;
