@@ -100,6 +100,7 @@ p {
 .barActive {
     
     display: block;
+    width: 98vw;
     opacity: .90;
     z-index: 10;
     top: 6vh;
@@ -112,9 +113,8 @@ p {
     background-color: rgb(99, 99, 99);
     border-bottom: 20px solid rgb(58, 58, 58);
     border-top: 20px solid rgb(58, 58, 58);
+    box-shadow: 0 0 6px 0 rgba(0, 0 ,0, 1);
     display: none;
-    
-    
     
 }
 
@@ -182,7 +182,20 @@ p {
         font-size: 18px;
         line-height: 1.3em;
 
+    }
+    .tabs {
+        
+        height: 8vh;
+    
+    }
 }
+@media (min-width: 933px) {
+    
+    .tabs {
+        
+        height: 6vh;
+    
+    }
     
 }
 
