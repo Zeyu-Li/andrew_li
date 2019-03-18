@@ -1,13 +1,1 @@
-"use strict";
-$(document).ready(function() {
-    
-        $('.slideshowContainer').slick({
-            
-            dots: true,
-            arrows: true,
-            autoplay:true,
-            autoplaySpeed: 2700,
-            
-        })
-                  
-});
+"use strict";$(document).ready(function(){$(".slideshowContainer").slick({dots:!0,arrows:!0,autoplay:!0,autoplaySpeed:2700})});
