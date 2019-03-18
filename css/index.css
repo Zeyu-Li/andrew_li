@@ -22,8 +22,6 @@ body {
     padding-bottom: 75px 8%;
     margin: 0 auto;
     max-width: 960px;
-    display: block;
-    position: static;
     
 }
 
@@ -34,13 +32,11 @@ h1 {
     text-align: center;
     margin-top: 1.2em;
     margin-bottom: 1em;
-    font-family: PT Sans Narrow, sans-Serif;
     
 }
 h2 {
     
     margin-left: 10px;
-    font-family: PT Sans Narrow, sans-Serif;
     
 }
 p {
@@ -58,7 +54,6 @@ p {
 .nav{
 
     background: rgba(255, 189, 84, 0.70);
-    color: black;
     list-style: none;
     margin: 0px;
     padding: 1.5vh 0 20px 0;
@@ -75,7 +70,6 @@ p {
     padding-right: 50px;
     z-index: 3;
     margin-left: 20px;
-    font-family: PT Sans Narrow,sans-serif;
 
 }
 .nav > li > a , .barActiveTabs > li >a {
@@ -83,14 +77,8 @@ p {
     width 100%;
     text-decoration: none;
     color: white;
-    font-family: PT Sans Narrow, sans-Serif;
     font-size: 20px;
 
-}
-.barActiveTabs > li >a {
-    
-    font-size: 20px;
-    
 }
 .nav > li > a:hover, .barActiveTabs > li >a:hover {
 
@@ -102,19 +90,12 @@ p {
 
 }
 
-.banner > img {
-    
-    z-index: 10;
-    
-}
-
 /* side bars */
 .barActive {
     
-    display: block;
-    width: 98vw;
-    opacity: .90;
-    z-index: 10;
+    width: 100vw;
+    opacity: .93;
+    z-index: 101;
     top: 6vh;
     position: fixed;
     animation: fadein 0.4s;
@@ -129,7 +110,11 @@ p {
     display: none;
     
 }
-
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .barActive {      
+        width: 98vw;   
+    }
+}
 .barActiveTabs {
     
     
@@ -140,7 +125,6 @@ p {
     height: 20vh;
     list-style: none;
     line-height: 1.8em;
-    
 	transition: 0.2s;
 	-moz-transition: 0.2s;
 	-webkit-transition: 0.2s;
@@ -172,15 +156,6 @@ p {
     -o-transition: 0.2s;
     
 }
-
-.tabs.fixed{
-
-    position: fixed;
-    top: 0;
-    z-index: 2;
-
-}
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -269,7 +244,6 @@ p {
         
     }
     
-    
 }
 
 /* Body */
@@ -332,7 +306,6 @@ p {
     left: 45%;
     margin-left: -15px;
     width: 18vw;
-    z-index: 10;
     height: 18vw;
     padding: 0;
     background-repeat: no-repeat;
@@ -366,14 +339,6 @@ p {
 
 /* slideshow */
 
-.newWindow {
-    
-    position: absolute; 
-    align-items: center;
-    right: 2em;
-    
-}
-
 @media (max-width: 960px) {
     
     #window {
@@ -381,40 +346,6 @@ p {
         width: 15vw;
         
     }
-    
-}
-
-.wButton {
-    
-    padding: 0;
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    display: inline-block;
-    text-align: center;
-    box-sizing: inherit;
-    
-}
-
-.wButton:hover{
-    
-    background-color: #fff;
-    
-}
-
-.buttonDiv {
-    
-    position:relative;
-    width: 100%;
-    display: block;
-    text-align: center;
-    z-index: 3; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: -3vh;
     
 }
 
