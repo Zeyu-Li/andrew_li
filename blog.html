@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!-- Andrew Li's personal website -->
+<html>
+<head>
+    
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Andrew Li's Personal Website">
+    <meta name="keywords" content="andrew li, code, media, website">
+    <meta name="author" content="Andrew Li">
+    
+    <link rel="icon" href="images/icon.ico" type="image/ico">
+    <title>Andrew's Digital Services | BLOG</title>
+    
+    <!--    css libraries   -->
+    
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <style>
+        h2 {
+            font-size: 28px;
+            color: rgb(94, 94, 94);
+        }
+        .hidden {
+            display: none;
+            
+        }
+        .expand:hover { cursor:pointer;color: aqua; }
+        .hidden a:hover {
+            color: gray;
+        transition: .2s;
+        -moz-transition: .2s;
+        -webkit-transition: .2s;
+        -o-transition: .2s
+        }
+    </style>
+    
+    <!--    fonts   -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <!--    js libraries    -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>if (!window.jQuery) document.write('<script src="jslib/jquery-3.3.1.min.js"><\/script>');</script>
+    
+</head>
+    
+<body>
+
+    <header>
+        <!-- banner -->
+        <div class="tabs">
+            <ul class="nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coding.html">CODING</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="other.html">OTHER SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><div><a class="banner"><img src="images/bars.svg"></a></div></li>
+            </ul>
+        </div>
+        
+        <!-- tabs menu if some small size -->
+        <div class="barActive">
+            <ul class="barActiveTabs">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coding.html">CODING</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="other.html">OTHER SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- main body -->
+    <section>
+        <div>
+
+            <!-- top cover pictures -->
+            <div>
+                <div class="titleImage" style="height: 30vh">
+                </div>
+                
+            </div>
+        
+            <!-- main text content body -->
+            <div class="mainBody" id="mainBody">
+                <!-- TODO: navigate bar -->
+
+                <h1>Andrew's Blog</h1>
+                
+                <p>This is Andrew's spicy blogs, which he posts about updated stuff in his life.</p>
+                
+                <!-- table -->
+                <div class="tableContainer"><div class="table">Journal Navigation Index <a style="color: blue" class="expand">[Expand]</a><hr>
+                    <ul class="hidden">
+                        <li><a href="#j1">Journal 1 (3/17/2019)</a></li>
+                        <li><a href="#j2">Journal 2 (3/17/2019)</a></li>
+                        <li><a href="#j3">Journal 3 (3/18/2019)</a></li>
+                        
+                    </ul>
+                    </div></div>
+                
+                <h2 id="j3">Journal 3 (3/18/2019):</h2>
+                <p>Working hard on finishing this website, and I'm getting close!
+                </p>
+                
+                <div class="pongCanvas"></div><br>
+                
+                <h2 id="j2">Journal 2 (3/17/2019 LATER):</h2> 
+                <p>I don't know how to structure a blog, so present to past is how I shall to it, although, I don't know if I should implement a navigator jump thingy. Whatever the case, I am going to start programing a game is js. I will try to do pong first, so wish me good luck!</p><br>
+                <h2 id="j1">Journal 1 (3/17/2019):</h2>
+                <p>All pages are done except for coding, which is going to be a slicker, more resume like design. Other than that, I think I will take these journals as a place to do js games and other small wigits to pass time and exercise my js skills. <br><br> Since this first journal is kind of boring, I will explain a little bit about myself and my experiences. I am 17 currently and this is my 3 attempt at making a website. The first time was for a class project that did not require a website, but I wanted to dip my toes. The second project is similar in design to this, but was rough on the edges. I didn't even know about the jQuery library so that's why I didn't use javascript then, also I had learnt vanilla js at the time, but it was a chore and I think that's what cause my nearly year long procrastination. However, it is better now than never! &#128578;</p>
+                <br>
+                
+            </div>
+                
+
+        </div>
+        
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer">
+
+        <div class="footer1">
+            <p class="footernote">&copy; 2019 Andrew Li's Digital Services. All Rights Reserved.
+            <a class="backtotop" href="#">&#9650; Back to top</a></p>
+        </div>
+        <hr class="divider">
+        
+        <div class="footer2">
+
+            <ul class="bottom">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coding.html">CODING</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="other.html">OTHER SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+            
+        </div>
+
+    <!-- back to top and banner tabs script with jQuery -->
+        
+    <script src="js/index.js"></script>
+    </footer>
+
+</body>
+
+</html>
