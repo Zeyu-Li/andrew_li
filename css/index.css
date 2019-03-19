@@ -446,5 +446,7 @@ a {
 .github {
     background-image: url(../images/github.svg);
     height: 24px;
-    width: 24px
+    width: 24px;
+    background-size: cover;
+    
 }
