@@ -111,7 +111,7 @@
             font-family: 'Open Sans', sans-serif;
             font-size: 1.1em;
             line-height: 1.7em;
-            padding-left: 2em;
+/*            padding-left: 2em;*/
             padding-right: 2em;
             color: black;
             
@@ -156,12 +156,28 @@
             .codeTable {
                 grid-template-columns: 40% 40%;
                 padding-left: 20px;
+            grid-column-gap: 2em;
             }
             .box {
-                width: 35vw;
+                width: 39vw;
             }
             .box:hover {
-                width: 37vw;
+                width: 40vw;
+            }
+            .whiteBody {
+                padding-top: 8vh;
+            }
+            .box h2 {
+                
+                font-size: 20px;
+                
+            }
+        }
+        @media (max-width: 500px) { 
+            #about {
+                
+                height: 150vh;
+                
             }
         }
     </style>
@@ -176,7 +192,9 @@
     <script>
         "use strict";
         $(document).ready(function() {
-            
+            if (620 >= $(window).width()){
+                    $(".misc").text("Misc");
+            }
             $(window).resize(function(){
                 if (620 >= $(window).width()){
                     $(".misc").text("Misc");
@@ -288,16 +306,16 @@
             </div>
         
             <!-- main text content body -->
-            <div class="block">
+            <div class="block" style="height: 105vh">
 
                 <h1 class="whiteBody" style="padding-top: 10vh">Projects</h1>
                 <div><br>
                     <h2>Python User-Password Program</h2>
-                    <p style="font-size: 20px;text-align: center">with JSON and Argon: <a href="https://github.com/Zeyu-Li/exercise_assignments/tree/master/achieve/passcode_v0.3" target="_target">link <img class="github"><br><img src="images/pro1.JPG" alt="image of another artwork example" title="code example" style="border-radius: 40px;max-width: 100%;height: auto;"></a></p>
+                    <p style="font-size: 20px;text-align: center">with JSON and Argon: <a href="https://github.com/Zeyu-Li/exercise_assignments/tree/master/achieve/passcode_v0.3" target="_target" id="contact">link <img class="github"><br><img src="images/pro1.JPG" alt="image of another artwork example" title="code example" style="border-radius: 40px;max-width: 100%;height: auto;"></a></p>
                     
                     
                 </div>
-                <p><br>Résumé: Still in Progress (come back later)<br><br></p>
+                <p><br>Résumé: Still in Progress (come back later)<br></p>
                 
                 
             </div>
