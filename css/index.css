@@ -10,19 +10,25 @@ body {
 }
 
 .mainBody {
+    
+    padding-right: 100px 8%;
+    padding-left: 100px 8%;
+    padding-top: 75px 8%;
+    padding-bottom: 75px 8%;
     margin: 0 auto;
     max-width: 960px;
-    padding: 75px
+    
 }
 
 h1 {
+    
     font-weight: 60;
     font-size: 2.5em;
     text-align: center;
     margin-top: 1.2em;
-    margin-bottom: 1em
+    margin-bottom: 1em;
+    
 }
-
 h2 {
     margin-left: 10px;
     font-family: PT Sans Narrow, sans-serif
@@ -366,7 +372,8 @@ a {
 .bottom > li > a {
     color: #fff;
     font-size: 17px;
-    line-height: 2em
+    line-height: 2em;
+    
 }
 
 .divider {
@@ -421,13 +428,23 @@ a {
     padding-right: 2em
 }
 
-p > a:hover {
-    color: rgba(255, 127, 41,.70);
+.hidden a:visited {
+    color: mediumblue;
+}
+#contact:link, #contact:visited {
+  color: mediumblue;
+}
+#contact:hover {
+    color: rgb(255, 127, 41);
+    text-decoration:none;
     transition: .2s;
     -moz-transition: .2s;
     -webkit-transition: .2s;
     -o-transition: .2s
+    
 }
-p > a:visited, .hidden a:visited {
-    color: mediumblue;
+.github {
+    background-image: url(../images/github.svg);
+    height: 24px;
+    width: 24px
 }

@@ -18,8 +18,27 @@
     <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
     <style>
+        p {
+            
+            max-width: 960px;
+            line-height: 2.3em;
+            padding-right: 200px 8%;
+            padding-left: 200px 8%;
+            padding-top: 75px 8%;
+            padding-bottom: 75px 8%;
+            
+    margin: 0 auto;
+        }
         .block {
-            height: 70vh;
+            box-shadow: 0 0 16px 0 rgba(0, 0, 0, 1);
+            width: 100vw;
+            height: 100vh;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            background-size: cover;
+            background-position: center center;
         }
         .blue {
             background-color: rgb(102, 160, 255)
@@ -30,7 +49,120 @@
             background-color:rgb(130, 178, 255)
         }
         h1 {
+            margin: 0px;
+            padding-top: 45vh;
+            color: aliceblue;
+            font-size: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2 {
             
+            color: midnightblue;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 60;
+            padding-right: 200px 8%;
+            padding-left: 200px 8%;
+            padding-top: 75px 8%;
+            padding-bottom: 75px 8%;
+        }
+        .top {
+            
+            background-image: url(images/code.jpg);
+            transition: .2s;
+            -moz-transition: .2s;
+            -webkit-transition: .2s;
+            -o-transition: .2s
+            
+        }
+        .box {
+            width: 25vw; 
+            display: table-cell;
+            max-width: 300px;
+            border-radius: 20px;
+            -webkit-box-shadow: 0 8px 6px -6px black;
+	       -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+            transition: .2s;
+            -moz-transition: .2s;
+            -webkit-transition: .2s;
+            padding-top: 12px;
+            -o-transition: .2s
+        }
+        
+        .box:hover {
+            
+            
+            width: 35vw;
+            border-radius: 5px;
+            transition: .2s;
+            background-color: whitesmoke;
+            -moz-transition: .2s;
+            -webkit-transition: .2s;
+            -o-transition: .2s;
+        }
+        .box li {
+            
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.1em;
+            line-height: 1.7em;
+            padding-left: 2em;
+            padding-right: 2em;
+            color: black;
+            
+        }
+        .whiteBody {
+            
+            color: rgb(22, 112, 255); 
+            opacity: .7;
+            padding-top: 25vh;
+            
+        }
+        .nav > li > a:hover,
+        .barActiveTabs > li > a:hover {
+    color: mediumblue;
+        }
+        .bottom > li > a:hover,
+        .backtotop:hover {
+            color: rgb(22, 112, 255);
+        }
+        .codeTable {
+            width: 100vw;
+            padding-top: 20px;
+            padding-left: 100px;
+            padding-right: 30px;
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-column-gap: 1em;
+            grid-row-gap: 2em;
+        }
+        .codeTable > div {
+            background-color: white;
+        }
+        .skill {
+            min-height: 1200px;
+        }
+        @media (max-width: 910px) { 
+            .skill {
+                height: 150vh;
+            }
+            .codeTable {
+                grid-template-columns: 40% 40%;
+                padding-left: 20px;
+            }
+            .box {
+                width: 35vw;
+            }
+            .box:hover {
+                width: 37vw;
+            }
         }
     </style>
     
@@ -41,6 +173,17 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>if (!window.jQuery) document.write('<script src="jslib/jquery-3.3.1.min.js"><\/script>');</script>
+    <script>
+        "use strict";
+        $(document).ready(function() {
+            
+            $(window).resize(function(){
+                if (620 >= $(window).width()){
+                    $(".misc").text("Misc");
+            }else{
+                $(".misc").text("Miscellaneous");
+            }})})
+    </script>
     
 </head>
     
@@ -79,22 +222,83 @@
 
             <!-- top cover pictures -->
             <div>
+                <div class="top"><div class="block blue" style="opacity: .92">
+                    
+                    <h1 style="padding-top: 45vh;">Andrew Li: Front and <br>Back End Developer<br></h1>
+                    <a class="sectionOne" href="#about"><div class="scollDown"></div></a>
+                        
+                </div></div>
                 
-                <div class="block blue">
+                
+            </div>
+            <div class="block" id="about">
+
+                <h1 class="whiteBody">About Andrew </h1>
+                <p><br>I am a creative and hardworking innovator with a thirst for knowledge. I both a front-end and back-end developer working towards being a full stack developer, however, my knowledge expends beyond code to include robotics and engineering, marketing, design, music, leadership, and business. If you are looking to add me on your team or to contract me for something, click on the contact tab.<br><br> I am soon attending the University of Alberta to study Computer Science. My projects, skills, and resume are at the bottom of the page. </p>
+                
+            </div>
+            <div class="block blue skill">
+
+                <h1 style="padding-top: 18vh;">Skills</h1>
+                <div class="codeTable">
                     
-                    <h1>Andrew's Blog</h1>
-                    
+                    <div class="box"> <h2>Front End</h2> 
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul></div>
+                    <div class="box"> <h2>Back End</h2> 
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>PHP</li><br>
+                    </ul></div>
+                    <div class="box"> <h2>Libraries</h2> 
+                    <ul>
+                        <li>jQuery</li>
+                    </ul></div>
+
+
+
+                    <div class="box"> <h2 class="misc">Miscellaneous</h2> 
+                    <ul>
+                        <li>SQL</li>
+                        <li>JSON</li>
+                        <li>Git</li>
+                        <li>Github</li>
+                    </ul></div>
+                    <div class="box"> <h2>Designer</h2> 
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Animate</li>
+                        <li>Adobe After Effects</li>
+                        <li>Blender</li>
+                        <li>Cinema 4D</li>
+                    </ul></div>
+                    <div class="box"> <h2>Learning</h2> 
+                    <ul>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>Django</li>
+                    </ul></div>
                 </div>
-                
                 
             </div>
         
             <!-- main text content body -->
             <div class="block">
 
+                <h1 class="whiteBody" style="padding-top: 10vh">Projects</h1>
+                <div><br>
+                    <h2>Python User-Password Program</h2>
+                    <p style="font-size: 20px;text-align: center">with JSON and Argon: <a href="https://github.com/Zeyu-Li/exercise_assignments/tree/master/achieve/passcode_v0.3" target="_target">link <img class="github"><br><img src="images/pro1.JPG" alt="image of another artwork example" title="code example" style="border-radius: 40px;max-width: 100%;height: auto;"></a></p>
+                    
+                    
+                </div>
+                <p><br>Résumé: Still in Progress (come back later)<br><br></p>
                 
-                
-                <br>
                 
             </div>
                 
