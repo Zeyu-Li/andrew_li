@@ -4,6 +4,8 @@
 
 My personal website for freelance work and for housing my coding profile. It is responsive and nibble
 
+Resume can be found in the resume directory as a pdf file
+
 ## INFO
 
 Index is the main file, with the other files accessed via the tabs in the top
