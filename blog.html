@@ -56,6 +56,20 @@
             width: 450px;
             margin: auto;
         }
+        .backGround2 > div {
+
+            position:'absolute';
+            transition-timing-function: linear;
+            transition: 2s;
+            -moz-transition: 2s;
+            -webkit-transition: 2s;
+            -o-transition: 2s
+
+        }
+        .ball {
+            
+            transition-timing-function: linear;
+        }
     </style>
 
     <!--    fonts   -->
@@ -73,7 +87,10 @@
             $('.button').click(function() {
 
                 $('.button').hide();
-                
+                $('.ball').css({"transform":"translate(430px)"});
+                setTimeout(function() {
+                    $('.ball').css({"transform":"translate(0px)"});
+                }, 2000);
 
             })
 
@@ -149,7 +166,7 @@
                 <p>Website is done and responsive!!! Now it is time for pong!
                 </p>
                 <div class="pongCanvas">
-                        <div class="backGround2">
+                        <div class="backGround2" style="position: relative">
 
                             <div style="text-align: center;padding-top: 85px"><button class="button" onClick="play" style="background:none;border:none;width: 50px;height: 50px;margin: auto 0;">
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="50px" y="50px"
@@ -162,6 +179,73 @@
                                <polygon class="st1" points="10,6.5 10,18.5 21,12.5 "/>
                                </svg>
                             </button></div>
+                            <div class="ball" style="width: 10px;height: 10px;">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<g>
+	<radialGradient id="SVGID_1_" cx="50" cy="50" r="50" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.5149" style="stop-color:#FDFDFD"/>
+		<stop  offset="0.7003" style="stop-color:#F6F6F6"/>
+		<stop  offset="0.8325" style="stop-color:#EBEBEB"/>
+		<stop  offset="0.9387" style="stop-color:#DADADA"/>
+		<stop  offset="1" style="stop-color:#CCCCCC"/>
+	</radialGradient>
+	<circle class="st0" cx="50" cy="50" r="50"/>
+</g>
+</svg>
+                            </div>
+                            <div class="playerPaddle" style="width: 10px;height: 50px;">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="50px"
+	 viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="25" x2="10" y2="25">
+		<stop  offset="0" style="stop-color:#C9C9C9"/>
+		<stop  offset="0.0138" style="stop-color:#CDCDCD"/>
+		<stop  offset="0.1143" style="stop-color:#E3E3E3"/>
+		<stop  offset="0.2243" style="stop-color:#F3F3F3"/>
+		<stop  offset="0.3498" style="stop-color:#FCFCFC"/>
+		<stop  offset="0.525" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.7022" style="stop-color:#FCFCFC"/>
+		<stop  offset="0.8092" style="stop-color:#F4F4F4"/>
+		<stop  offset="0.8976" style="stop-color:#E6E6E6"/>
+		<stop  offset="0.9754" style="stop-color:#D2D2D2"/>
+		<stop  offset="1" style="stop-color:#C9C9C9"/>
+	</linearGradient>
+	<path class="st0" d="M5,0L5,0c2.76,0,5,2.24,5,5v40c0,2.76-2.24,5-5,5h0c-2.76,0-5-2.24-5-5V5C0,2.24,2.24,0,5,0z"/>
+</g>
+</svg>
+                            </div>
+                            <div class="AIPaddle" style="width: 10px;height: 50px;">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="25" x2="10" y2="25">
+		<stop  offset="0" style="stop-color:#C9C9C9"/>
+		<stop  offset="0.0138" style="stop-color:#CDCDCD"/>
+		<stop  offset="0.1143" style="stop-color:#E3E3E3"/>
+		<stop  offset="0.2243" style="stop-color:#F3F3F3"/>
+		<stop  offset="0.3498" style="stop-color:#FCFCFC"/>
+		<stop  offset="0.525" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.7022" style="stop-color:#FCFCFC"/>
+		<stop  offset="0.8092" style="stop-color:#F4F4F4"/>
+		<stop  offset="0.8976" style="stop-color:#E6E6E6"/>
+		<stop  offset="0.9754" style="stop-color:#D2D2D2"/>
+		<stop  offset="1" style="stop-color:#C9C9C9"/>
+	</linearGradient>
+	<path class="st0" d="M5,0L5,0c2.76,0,5,2.24,5,5v40c0,2.76-2.24,5-5,5h0c-2.76,0-5-2.24-5-5V5C0,2.24,2.24,0,5,0z"/>
+</g>
+</svg>
+                            </div>
                         </div>
 
                 </div><br>
