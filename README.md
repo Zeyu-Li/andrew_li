@@ -15,7 +15,7 @@ There are 6 tabs,
  * media goes through my artistic projects
  * other services include 3D software and projects
  * contact is self explanatory
- * blog is a collection of journal entries and some cool(citation needed) Javscript projects
+ * blog is a collection of journal entries and some cool(citation needed) Javascript projects
 
 ### Built with
 * [jQuery](https://jquery.com/)
